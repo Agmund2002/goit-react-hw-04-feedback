@@ -1,6 +1,6 @@
 import { Item, List } from "./Statistics.styled";
 
-export const Statistics = ({ values: { good, neutral, bad}, total, positive }) => {
+export const Statistics = ({ good, neutral, bad, total, positive }) => {
   return (
     <List>
       <Item>Good: {good}</Item>
