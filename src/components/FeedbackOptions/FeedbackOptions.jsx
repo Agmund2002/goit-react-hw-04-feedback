@@ -4,7 +4,7 @@ export const FeedbackOptions = ({ options, handlerAddRate }) => {
   return (
     <Container>
       {options.map((item, index) => (
-        <Button key={index} type="button" onClick={handlerAddRate}>
+        <Button key={index} type="button" onClick={() => handlerAddRate(item)}>
           {item}
         </Button>
       ))}
